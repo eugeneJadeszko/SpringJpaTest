@@ -18,7 +18,7 @@ public class BookEntity {
 	private String book;
 	@Column(name = "author")
 	private String author;
-	@Column(name = "user")
+	@Column(name = "users")
 	private String user;
 	@Column(name = "board")
 	private int board;
