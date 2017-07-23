@@ -14,12 +14,12 @@ import by.intexsoft.SHJ.service.BookServiceImpl;
 public class RunSHJ {
 	public static void main(String[] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext("by.intexsoft.SHJ.config");
-		// BookService service = context.getBean(BookServiceImpl.class);
+//		BookService service = context.getBean(BookServiceImpl.class);
 		BookService service = new BookServiceImpl();
 		BookEntity book = new BookEntity();
 		book.setAuthor("rakkkk");
 		book.setBook("booook");
-		book.setUser("raczona");
+		book.setUser("raczina");
 		service.addBook(book);
 	}
 }

@@ -16,5 +16,4 @@ public class BookServiceImpl implements BookService {
 		BookEntity saveBook = repository.saveAndFlush(book);
 		return saveBook;
 	}
-
 }
