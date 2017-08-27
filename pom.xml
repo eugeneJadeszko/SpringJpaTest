@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>by.intexsoft.SHJ</groupId>
-	<artifactId>SpringJpaTest</artifactId>
+	<artifactId>Courses_SpringJpaTomcatMaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>SpringJpaTest</name>
+	<name>Courses_SpringJpaTomcatMaven</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
