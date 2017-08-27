@@ -16,6 +16,7 @@ import by.intexsoft.SHJ.service.BookServiceImpl;
 @RestController
 @RequestMapping("/book")
 public class BookController {
+	private static int count = 0;
 
 	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("by.intexsoft.SHJ.config");
 	BookService bookService = context.getBean(BookServiceImpl.class);
@@ -24,10 +25,11 @@ public class BookController {
 	@RequestMapping("/add")
 	public String add() {
 		BookEntity book = new BookEntity();
-		book.setAuthor("author5");
-		book.setBook("book5");
-		book.setUser("user5");
+		book.setAuthor("author" + count);
+		book.setBook("book" + count);
+		book.setUser("user" + count);
 		bookService.addBook(book);
+		count++;
 		return "add book: " + book.getBook();
 	}
 
